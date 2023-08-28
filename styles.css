@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+@font-face {
+  font-family: "Verdana Pro Bold";
+  src: url("fonts/Verdana Pro Bold/Verdana Pro Bold.woff2") format("woff2"),
+    url("fonts/Verdana Pro Bold/Verdana Pro Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ascender Serif W01 Bold";
+  src: url("fonts/Ascender Serif W01 Bold/Ascender Serif W01 Bold.woff2")
+      format("woff2"),
+    url("fonts/Ascender Serif W01 Bold/Ascender Serif W01 Bold.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nimbus Sans L Bold";
+  src: url("fonts/Nimbus Sans L Bold/Nimbus Sans L Bold.woff2") format("woff2"),
+    url("fonts/Nimbus Sans L Bold/Nimbus Sans L Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Mobile Phones */
+@media screen {
+  /* Styles for mobile phones */
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+  }
+
+  .header img {
+    max-width: 100%;
+    width: 60px;
+    height: auto;
+    margin: 10px 0px;
+  }
+
+  body {
+    margin: 0 5rem;
+    font-size: 100%;
+    line-height: 1.5;
+  }
+
+  .title {
+    font-size: 2rem;
+    font-family: "Verdana Pro Bold", serif;
+    margin-bottom: 0;
+
+    /* font-family: "Ascender Serif W01 Bold", serif; */
+  }
+
+  h1 {
+    /* font-family: 'Verdana Pro Bold', sans-serif; */
+    font-family: "Nimbus Sans L Bold", sans-serif;
+    font-size: 2em;
+    letter-spacing: -2px;
+    font-weight: 600;
+    line-height: 0.9em;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .question {
+    font-family: "Nimbus Sans L Bold", sans-serif;
+    font-weight: 600;
+    font-size: 1.25em;
+    margin-bottom: 1rem !important;
+  }
+
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: hsla(0, 0%, 0%, 0.75);
+  }
+
+  a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: hsla(0, 0%, 0%, 0.5);
+  }
+
+  a:hover,
+  a:active {
+    color: hsla(0, 0%, 0%, 0.75);
+  }
+}
+
+/* Laptops and Desktops */
+@media screen and (min-width: 1025px) {
+  .header {
+    margin-bottom: 2rem;
+    gap: 2rem;
+  }
+
+  .header img {
+    width: 100px;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  body {
+    margin: 0 10rem;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+}
